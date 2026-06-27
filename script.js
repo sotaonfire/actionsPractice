@@ -1,7 +1,8 @@
 const buttonClass = document.querySelector(".button");
+const button_text = document.querySelector(".button_text");
 function clickButton() {
   buttonClass.addEventListener("click", () => {
-    buttonClass.value = "ボタンが押されました";
+    button_text.textContent = "ボタンが押されたよ";
     return;
   });
 }
