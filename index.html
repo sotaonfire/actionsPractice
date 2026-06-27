@@ -6,11 +6,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>GitHub Actions の練習サイト</h1>
-    <p class="button_text">ボタンはまだ押されてないよ</p>
-    <form action="">
-      <input type="button" class="button" value="ボタンだよ" />
-    </form>
-    <script src="script.js"></script>
+    <div id="app">
+      <h1>GitHub Actions の練習サイト</h1>
+      <p class="button_text">{{buttonText}}</p>
+      <form action="">
+        <input
+          type="button"
+          class="button"
+          @click="clickButton()"
+          value="ボタンだよ"
+        />
+      </form>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
